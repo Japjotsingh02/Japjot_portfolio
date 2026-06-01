@@ -1,6 +1,6 @@
 # 🚀 Japjot Singh — Portfolio
 
-A modern, performant personal portfolio built with **Next.js 15**, **React 19**, **TypeScript**, and **Tailwind CSS** — featuring smooth animations powered by **Framer Motion** and full dark/light theme support.
+A modern, performant personal portfolio built with **Next.js 16**, **React 19**, **TypeScript**, and **Tailwind CSS v4** — featuring smooth animations powered by **Framer Motion** and full dark/light theme support.
 
 ---
 
@@ -41,10 +41,10 @@ portfolio/
 
 | Category      | Technology                          |
 |---------------|-------------------------------------|
-| Framework     | [Next.js 15](https://nextjs.org/)   |
-| Language      | TypeScript 5                        |
-| Styling       | Tailwind CSS 3                      |
-| Animations    | Framer Motion 11                    |
+| Framework     | [Next.js 16](https://nextjs.org/)   |
+| Language      | TypeScript 6                        |
+| Styling       | Tailwind CSS 4                      |
+| Animations    | Framer Motion 12                    |
 | Theming       | next-themes                         |
 | Runtime       | React 19                            |
 | Deployment    | [Vercel](https://vercel.com/)       |
@@ -62,8 +62,8 @@ portfolio/
 
 ```bash
 # Clone the repository
-git clone https://github.com/japjotsingh/portfolio.git
-cd portfolio
+git clone https://github.com/Japjotsingh02/Japjot_portfolio.git
+cd Japjot_portfolio
 
 # Install dependencies
 npm install
