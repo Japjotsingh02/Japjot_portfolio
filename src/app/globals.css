@@ -1,0 +1,114 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+/* =============================================
+   Tailwind v4 Theme Tokens
+   ============================================= */
+@theme {
+  --color-bg: #0a0a0a;
+  --color-bg2: #111111;
+  --color-bg3: #1a1a1a;
+  --color-text: #f0f0f0;
+  --color-text2: rgb(240 240 240 / 0.5);
+  --color-text3: rgb(240 240 240 / 0.28);
+  --color-border: rgb(255 255 255 / 0.08);
+  --color-border2: rgb(255 255 255 / 0.14);
+
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* =============================================
+   Dark Mode (default)
+   ============================================= */
+:root {
+  --bg: #0a0a0a;
+  --bg2: #111111;
+  --bg3: #1a1a1a;
+  --border: rgb(255 255 255 / 0.08);
+  --border2: rgb(255 255 255 / 0.14);
+  --text: #f0f0f0;
+  --text2: rgb(240 240 240 / 0.5);
+  --text3: rgb(240 240 240 / 0.28);
+}
+
+/* =============================================
+   Light Mode
+   ============================================= */
+.light {
+  --bg: #fafaf9;
+  --bg2: #f2f1ef;
+  --bg3: #e8e7e4;
+  --border: rgb(0 0 0 / 0.08);
+  --border2: rgb(0 0 0 / 0.14);
+  --text: #111111;
+  --text2: rgb(17 17 17 / 0.5);
+  --text3: rgb(17 17 17 / 0.28);
+}
+
+/* =============================================
+   Base
+   ============================================= */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  cursor: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    cursor: auto;
+  }
+}
+
+* {
+  cursor: none;
+}
+
+@media (max-width: 768px) {
+  * {
+    cursor: auto !important;
+  }
+}
+
+::selection {
+  background: var(--text);
+  color: var(--bg);
+}
+
+/* =============================================
+   Animations
+   ============================================= */
+@keyframes shimmer {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes lineDown {
+  from { transform: scaleY(0); }
+  to   { transform: scaleY(1); }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.7s ease forwards;
+}
+
+.animate-line-down {
+  animation: lineDown 1.2s ease forwards;
+  transform-origin: top;
+}
