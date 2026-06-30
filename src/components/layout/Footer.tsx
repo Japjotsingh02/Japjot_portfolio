@@ -10,7 +10,7 @@ export default function Footer() {
         className="font-mono text-[11px] tracking-[0.06em]"
         style={{ color: 'var(--text3)' }}
       >
-        © 2025 {siteConfig.name}
+        © 2026 {siteConfig.name}
       </span>
       <span
         className="font-mono text-[11px] tracking-[0.06em]"

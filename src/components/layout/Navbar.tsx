@@ -39,7 +39,7 @@ export default function Navbar() {
         className="font-mono text-[13px] tracking-[0.05em] transition-colors duration-200"
         style={{ color: 'var(--text2)' }}
       >
-        JS / 2025
+        JS / 2026
       </Link>
 
       <ul className="hidden md:flex items-center gap-8 list-none">

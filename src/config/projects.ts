@@ -27,7 +27,7 @@ export const projects: Project[] = [
       'Framer Motion',
     ],
     liveUrl: 'https://coindra.vercel.app',
-    githubUrl: 'https://github.com/YOUR_USERNAME/coindra',
+    githubUrl: 'https://github.com/Japjotsingh02/coindra',
     featured: true,
   },
   {
