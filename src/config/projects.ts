@@ -1,57 +1,54 @@
 export type Project = {
-  num: string
-  name: string
-  description: string
-  tags: string[]
-  liveUrl?: string
-  githubUrl?: string
-  featured?: boolean
-  private?: boolean
-}
+  num: string;
+  name: string;
+  category: string;
+  year: string;
+  description: string;
+  tags: string[];
+  previewImage?: string;
+  isLive: boolean;
+  liveUrl?: string;
+  githubUrl?: string;
+  private?: boolean;
+};
 
 export const projects: Project[] = [
   {
-    num: '01',
-    name: 'Coindra',
+    num: "01",
+    name: "Coindra",
+    category: "Fintech",
+    year: "2025",
     description:
-      'A real-time crypto market explorer visualizing 500+ trading pairs as interactive calendar heatmaps. Each day shows volatility patterns, liquidity scores, and performance trends — built to answer when to trade, not just what.',
-    tags: [
-      'Next.js',
-      'TypeScript',
-      'WebSockets',
-      'ECharts',
-      'React Query',
-      'Zustand',
-      'Redis',
-      'PostgreSQL',
-      'Framer Motion',
-    ],
-    liveUrl: 'https://coindra.vercel.app',
-    githubUrl: 'https://github.com/Japjotsingh02/coindra',
-    featured: true,
+      "Real-time crypto market explorer with interactive calendar heatmaps across 500+ trading pairs.",
+    tags: ["Next.js", "PostgreSQL", "Websockets", "Redis"],
+    isLive: true,
+    liveUrl: "https://coindra.vercel.app",
+    githubUrl: "https://github.com/Japjotsingh02/coindra",
+    previewImage: "/previews/asset-coindra-preview.png",
   },
   {
-    num: '02',
-    name: 'Bizpilot — LLM Document Automation',
+    num: "02",
+    name: "Bizpilot",
+    category: "AI Tool",
+    year: "2025",
     description:
-      'AI-powered accounting pipeline processing 100+ documents using AWS Textract and LLM agents. Extracted 50+ data fields per document, automated tax filings, and reduced reconciliation time by 8 hours/week.',
-    tags: [
-      'React',
-      'TypeScript',
-      'Node.js',
-      'AWS Textract',
-      'LLM Agents',
-      'Chart.js',
-      'Redux',
-    ],
+      "AI accounting pipeline processing 100+ documents with AWS Textract and LLM agents.",
+    tags: ["React", "Typescript", "Node.js", "AWS"],
+    isLive: false,
     private: true,
+    liveUrl: "https://app.bizpilot.in",
+    previewImage: "/previews/asset-bizpilot-preview.png",
   },
   {
-    num: '03',
-    name: 'Denaurlen',
+    num: "03",
+    name: "Denaurlen",
+    category: "Social",
+    year: "2024",
     description:
-      'Social media platform driving 35% mobile engagement growth via reward components. Integrated 5+ REST APIs including payment and analytics endpoints, reducing data load time by 40%.',
-    tags: ['React', 'Bootstrap', 'REST APIs', 'Payments'],
-    liveUrl: 'https://denaurlen.com',
+      "Social platform with reward components and integrated payment and analytics APIs.",
+    tags: ["React", "GraphQL", "HTML/CSS", "Payments"],
+    isLive: true,
+    liveUrl: "https://denaurlen.com",
+    previewImage: "/previews/asset-denaurlen-preview.png",
   },
-]
+];
