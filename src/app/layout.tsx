@@ -26,7 +26,7 @@ const dmMono = DM_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Japjot Singh — Full Stack Developer',
+  title: 'Japjot Singh | Full Stack Developer',
   description:
     'Full stack developer building clean, performant interfaces and data-driven products. Based in Delhi, India.',
   keywords: [
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Japjot Singh' }],
   openGraph: {
-    title: 'Japjot Singh — Full Stack Developer',
+    title: 'Japjot Singh | Full Stack Developer',
     description:
       'Full stack developer building clean, performant interfaces and data-driven products.',
     type: 'website',
