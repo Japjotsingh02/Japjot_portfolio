@@ -20,7 +20,7 @@ export const siteConfig = {
 
 export const stats = [
   { num: '2+', label: 'Years production experience' },
-  { num: '300+', label: 'LeetCode problems solved' },
+  { num: '6+', label: 'Projects built & shipped' },
+  { num: '8h/wk', label: 'Reconciliation time saved via LLM automation' },
   { num: '60%', label: 'Processing time reduced at Bizpilot' },
-  { num: '8h/wk', label: 'Reconciliation time saved via LLM agents' },
 ]
